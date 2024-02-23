@@ -12,7 +12,7 @@ app.use(express.json());
 // routes
 
 app.use('/categories', require('./routes/categoryRoutes'));
-
+app.use('/products', require('./routes/productRoutes'));
 
 
 const PORT = process.env.PORT || 5000;
