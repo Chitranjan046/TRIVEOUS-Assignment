@@ -9,10 +9,13 @@ connectDB();
 app.use(express.json());
 
 
-// routes
+// Routes
 
+app.use('/auth', require('./routes/authRoutes'));
 app.use('/categories', require('./routes/categoryRoutes'));
 app.use('/products', require('./routes/productRoutes'));
+app.use('/cart', require('./routes/cartRoutes'));
+
 
 
 const PORT = process.env.PORT || 5000;
