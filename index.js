@@ -15,6 +15,7 @@ app.use('/auth', require('./routes/authRoutes'));
 app.use('/categories', require('./routes/categoryRoutes'));
 app.use('/products', require('./routes/productRoutes'));
 app.use('/cart', require('./routes/cartRoutes'));
+app.use('/orders', require('./routes/orderRoutes'));
 
 
 
