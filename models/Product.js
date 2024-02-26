@@ -13,12 +13,12 @@ const productSchema = new mongoose.Schema({
   availability: {
     type: Boolean,
     default: true,
-  },
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Category',
-    required: true,
-  },
+  }
+  // category: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'Category',
+  //   required: true,
+  // },
 });
 
 const Product = mongoose.model('Product', productSchema);
